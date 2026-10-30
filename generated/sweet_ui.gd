@@ -44,7 +44,7 @@ func add_node(node:Node, parent:Node=null) -> Node:
 func add_child(node:Node, parent:Node=null) -> _Generated.SwControl:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwControl.with_parent(node, parent, self)
+	return _Generated.SwControl._with_parent(node, parent, self)
 
 func spacer(parent: BoxContainer = null, begin:=false) -> SweetUI:
 	_get_parent(parent).add_spacer(begin).name = "Spacer"
@@ -67,202 +67,202 @@ const Sweets = preload("sweets.gd")
 func button(parent: Node = null) -> _Generated.SwButton:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwButton.with_parent(Button.new(), parent, self)
+	return _Generated.SwButton._with_parent(Button.new(), parent, self)
 
 
 func button_from(node: Button, parent: Node = null) -> _Generated.SwButton:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwButton.with_parent(node, parent, self)
+	return _Generated.SwButton._with_parent(node, parent, self)
 
 
 func center_container(parent: Node = null) -> _Generated.SwCenterContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwCenterContainer.with_parent(CenterContainer.new(), parent, self)
+	return _Generated.SwCenterContainer._with_parent(CenterContainer.new(), parent, self)
 
 
 func center_container_from(node: CenterContainer, parent: Node = null) -> _Generated.SwCenterContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwCenterContainer.with_parent(node, parent, self)
+	return _Generated.SwCenterContainer._with_parent(node, parent, self)
 
 
 func color_rect(parent: Node = null) -> _Generated.SwColorRect:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwColorRect.with_parent(ColorRect.new(), parent, self)
+	return _Generated.SwColorRect._with_parent(ColorRect.new(), parent, self)
 
 
 func color_rect_from(node: ColorRect, parent: Node = null) -> _Generated.SwColorRect:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwColorRect.with_parent(node, parent, self)
+	return _Generated.SwColorRect._with_parent(node, parent, self)
 
 
 func control(parent: Node = null) -> _Generated.SwControl:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwControl.with_parent(Control.new(), parent, self)
+	return _Generated.SwControl._with_parent(Control.new(), parent, self)
 
 
 func control_from(node: Control, parent: Node = null) -> _Generated.SwControl:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwControl.with_parent(node, parent, self)
+	return _Generated.SwControl._with_parent(node, parent, self)
 
 
 func grid_container(parent: Node = null) -> _Generated.SwGridContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwGridContainer.with_parent(GridContainer.new(), parent, self)
+	return _Generated.SwGridContainer._with_parent(GridContainer.new(), parent, self)
 
 
 func grid_container_from(node: GridContainer, parent: Node = null) -> _Generated.SwGridContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwGridContainer.with_parent(node, parent, self)
+	return _Generated.SwGridContainer._with_parent(node, parent, self)
 
 
 func h_box_container(parent: Node = null) -> _Generated.SwHBoxContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwHBoxContainer.with_parent(HBoxContainer.new(), parent, self)
+	return _Generated.SwHBoxContainer._with_parent(HBoxContainer.new(), parent, self)
 
 
 func h_box_container_from(node: HBoxContainer, parent: Node = null) -> _Generated.SwHBoxContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwHBoxContainer.with_parent(node, parent, self)
+	return _Generated.SwHBoxContainer._with_parent(node, parent, self)
 
 
 func h_split_container(parent: Node = null) -> _Generated.SwHSplitContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwHSplitContainer.with_parent(HSplitContainer.new(), parent, self)
+	return _Generated.SwHSplitContainer._with_parent(HSplitContainer.new(), parent, self)
 
 
 func h_split_container_from(node: HSplitContainer, parent: Node = null) -> _Generated.SwHSplitContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwHSplitContainer.with_parent(node, parent, self)
+	return _Generated.SwHSplitContainer._with_parent(node, parent, self)
 
 
 func label(parent: Node = null) -> _Generated.SwLabel:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwLabel.with_parent(Label.new(), parent, self)
+	return _Generated.SwLabel._with_parent(Label.new(), parent, self)
 
 
 func label_from(node: Label, parent: Node = null) -> _Generated.SwLabel:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwLabel.with_parent(node, parent, self)
+	return _Generated.SwLabel._with_parent(node, parent, self)
 
 
 func line_edit(parent: Node = null) -> _Generated.SwLineEdit:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwLineEdit.with_parent(LineEdit.new(), parent, self)
+	return _Generated.SwLineEdit._with_parent(LineEdit.new(), parent, self)
 
 
 func line_edit_from(node: LineEdit, parent: Node = null) -> _Generated.SwLineEdit:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwLineEdit.with_parent(node, parent, self)
+	return _Generated.SwLineEdit._with_parent(node, parent, self)
 
 
 func margin_container(parent: Node = null) -> _Generated.SwMarginContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwMarginContainer.with_parent(MarginContainer.new(), parent, self)
+	return _Generated.SwMarginContainer._with_parent(MarginContainer.new(), parent, self)
 
 
 func margin_container_from(node: MarginContainer, parent: Node = null) -> _Generated.SwMarginContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwMarginContainer.with_parent(node, parent, self)
+	return _Generated.SwMarginContainer._with_parent(node, parent, self)
 
 
 func panel_container(parent: Node = null) -> _Generated.SwPanelContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwPanelContainer.with_parent(PanelContainer.new(), parent, self)
+	return _Generated.SwPanelContainer._with_parent(PanelContainer.new(), parent, self)
 
 
 func panel_container_from(node: PanelContainer, parent: Node = null) -> _Generated.SwPanelContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwPanelContainer.with_parent(node, parent, self)
+	return _Generated.SwPanelContainer._with_parent(node, parent, self)
 
 
 func progress_bar(parent: Node = null) -> _Generated.SwProgressBar:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwProgressBar.with_parent(ProgressBar.new(), parent, self)
+	return _Generated.SwProgressBar._with_parent(ProgressBar.new(), parent, self)
 
 
 func progress_bar_from(node: ProgressBar, parent: Node = null) -> _Generated.SwProgressBar:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwProgressBar.with_parent(node, parent, self)
+	return _Generated.SwProgressBar._with_parent(node, parent, self)
 
 
 func scroll_container(parent: Node = null) -> _Generated.SwScrollContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwScrollContainer.with_parent(ScrollContainer.new(), parent, self)
+	return _Generated.SwScrollContainer._with_parent(ScrollContainer.new(), parent, self)
 
 
 func scroll_container_from(node: ScrollContainer, parent: Node = null) -> _Generated.SwScrollContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwScrollContainer.with_parent(node, parent, self)
+	return _Generated.SwScrollContainer._with_parent(node, parent, self)
 
 
 func text_edit(parent: Node = null) -> _Generated.SwTextEdit:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwTextEdit.with_parent(TextEdit.new(), parent, self)
+	return _Generated.SwTextEdit._with_parent(TextEdit.new(), parent, self)
 
 
 func text_edit_from(node: TextEdit, parent: Node = null) -> _Generated.SwTextEdit:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwTextEdit.with_parent(node, parent, self)
+	return _Generated.SwTextEdit._with_parent(node, parent, self)
 
 
 func texture_rect(parent: Node = null) -> _Generated.SwTextureRect:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwTextureRect.with_parent(TextureRect.new(), parent, self)
+	return _Generated.SwTextureRect._with_parent(TextureRect.new(), parent, self)
 
 
 func texture_rect_from(node: TextureRect, parent: Node = null) -> _Generated.SwTextureRect:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwTextureRect.with_parent(node, parent, self)
+	return _Generated.SwTextureRect._with_parent(node, parent, self)
 
 
 func v_box_container(parent: Node = null) -> _Generated.SwVBoxContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwVBoxContainer.with_parent(VBoxContainer.new(), parent, self)
+	return _Generated.SwVBoxContainer._with_parent(VBoxContainer.new(), parent, self)
 
 
 func v_box_container_from(node: VBoxContainer, parent: Node = null) -> _Generated.SwVBoxContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwVBoxContainer.with_parent(node, parent, self)
+	return _Generated.SwVBoxContainer._with_parent(node, parent, self)
 
 
 func v_split_container(parent: Node = null) -> _Generated.SwVSplitContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwVSplitContainer.with_parent(VSplitContainer.new(), parent, self)
+	return _Generated.SwVSplitContainer._with_parent(VSplitContainer.new(), parent, self)
 
 
 func v_split_container_from(node: VSplitContainer, parent: Node = null) -> _Generated.SwVSplitContainer:
 	if not is_instance_valid(parent):
 		parent = _node
-	return _Generated.SwVSplitContainer.with_parent(node, parent, self)
+	return _Generated.SwVSplitContainer._with_parent(node, parent, self)
