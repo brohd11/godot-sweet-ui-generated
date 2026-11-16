@@ -34,15 +34,3 @@ exports:
     source: "res://scripts/sweet_ui"
     export_name: "sweet-ui{{version=res://scripts/sweet_ui}}"
     export_folder: scripts/sweet_ui
-    exclude:
-      directories:
-        - "res://scripts/sweet_ui/_export_ignore"
-      file_extensions: []
-      files: []
-    other_transfers: []
-    parser_overide_settings:
-      parse_cs: {}
-      parse_gd: {}
-      parse_tscn: {}
-      parse_tres: {}
-    remote_dir: "res://scripts/sweet_ui/src/remote"
